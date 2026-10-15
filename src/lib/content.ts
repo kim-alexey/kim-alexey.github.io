@@ -3,10 +3,10 @@ export const profile = {
   email: "kim.alyosha@gmail.com",
   linkedin: "https://www.linkedin.com/in/alexeykim-sbu/",
   introduction:
-    "I’m Alexey Kim, an Information Systems student at Stony Brook University, connecting technology, business, and data to understand practical problems.",
+    "I'm Alexey Kim, an Information Systems student at Stony Brook University, connecting technology, business and data to understand practical problems.",
   about: [
-    "I’m a junior pursuing a B.S. in Information Systems, specializing in Business and Economics, with minors in Finance and Industrial Engineering. I expect to graduate in Spring 2028.",
-    "My experience spans university websites, student support, programming instruction, and educational technology. I enjoy work that combines technical understanding with clear communication.",
+    "I chose Information Systems because I’m interested in both how technology works and how people use it. I enjoy breaking down problems, organizing information, and finding ways to make everyday tasks easier. I'm especially interested in how data and technology can support better business decisions.",
+    "My experience includes university websites, student and customer support, and programming instruction. I enjoy work that combines technical understanding with clear communication.",
     "Originally from Kazakhstan and now studying in New York, I bring an international perspective and communicate in English and Russian.",
   ],
 };
@@ -159,18 +159,21 @@ export const skillGroups = [
   {
     number: "01",
     name: "Technology & data",
-    description: "Tools I’ve studied or used in coursework and practical work.",
+    description: "Tools I've studied or used in coursework and practical work.",
     skills: [
       "SQL",
       "Relational database design",
-      "Microsoft Access",
-      "Excel",
+      "Microsoft Office (Excel, Access, Word)",
+      "Google Workspace (Docs, Sheets, Slides, Drive)",
       "Java",
       "Python",
       "JavaScript",
       "HTML & CSS",
       "Git",
       "Content management",
+      "React",
+      "Next.js",
+      "TypeScript",
     ],
   },
   {

@@ -11,7 +11,7 @@ import {
 import { CursorTrail } from "./cursor-trail";
 
 const resume = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Alexey-Kim-Resume.pdf`;
-const links = ["About", "Experience", "Projects", "Skills", "Contact"];
+const links = ["About", "Experience", "Skills", "Projects", "Contact"];
 
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
   return (
@@ -406,7 +406,7 @@ export default function Portfolio() {
           </div>
           <ConnectionMap />
           <div className="hero-foot">
-            <span>BASED IN NEW YORK · ROOTED IN KAZAKHSTAN · BORN IN KOREA</span>
+            <span>BASED IN NEW YORK · ROOTED IN KOREA · BORN IN KAZAKHSTAN</span>
             <a href="#about">
               A little more about me <span aria-hidden="true">↓</span>
             </a>
@@ -463,73 +463,13 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <section className="projects-section section-space" id="projects">
-          <div className="section-shell">
-            <div className="section-label">
-              <span>02 / PROJECTS</span>
-              <span className="label-line" />
-            </div>
-            <div className="section-heading">
-              <h2>
-                Learning by building
-              </h2>
-              <p>
-                Coursework and practical projects.
-                <br />A growing collection of my work.
-              </p>
-            </div>
-            <div className="project-filters" aria-label="Filter projects">
-              {["All work", "Planning"].map((f) => (
-                <button
-                  key={f}
-                  className={filter === f ? "active" : ""}
-                  aria-pressed={filter === f}
-                  onClick={() => setFilter(f)}
-                >
-                  {f}
-                  {f === "All work" && (
-                    <span>{String(projects.length).padStart(2, "0")}</span>
-                  )}
-                </button>
-              ))}
-            </div>
-            <div className="project-grid" aria-live="polite">
-              {projects
-                .filter((p) => filter === "All work" || p.category === filter)
-                .map((p) => (
-                  <article className="project-card" key={p.id}>
-                    <ProjectArt kind={p.illustration} />
-                    <div className="project-content">
-                      <div className="project-meta">
-                        <span>{p.context}</span>
-                        <span>{p.id}</span>
-                      </div>
-                      <h3>{p.title}</h3>
-                      <p>{p.description}</p>
-                      <div className="tags">
-                        {p.tools.map((t) => (
-                          <span key={t}>{t}</span>
-                        ))}
-                      </div>
-                      <button
-                        className="project-open"
-                        onClick={() => setProject(p)}
-                        aria-label={`Read project notes: ${p.title}`}
-                      >
-                        Project notes <Arrow diagonal />
-                      </button>
-                    </div>
-                  </article>
-                ))}
-            </div>
-          </div>
-        </section>
+
         <section
           className="experience-section section-shell section-space"
           id="experience"
         >
           <div className="section-label">
-            <span>03 / EXPERIENCE</span>
+            <span>02 / EXPERIENCE</span>
             <span className="label-line" />
           </div>
           <div className="section-heading">
@@ -567,6 +507,24 @@ export default function Portfolio() {
               </details>
             ))}
           </div>
+          </section>
+          <section
+            className="activities-section section-shell section-space"
+            id="activities"
+          >
+            <div className="section-label">
+              <span>03 / ACTIVITIES</span>
+              <span className="label-line" />
+            </div>
+
+            <div className="section-heading">
+              <h2>Beyond the classroom</h2>
+              <p>
+                Leadership, volunteering, and sports.
+                <br />
+                Experiences that shaped me.
+              </p>
+            </div>
           <div className="volunteer-note">
           <span className="volunteer-icon" aria-hidden="true">
             ✳
@@ -675,13 +633,75 @@ export default function Portfolio() {
 
           <span className="volunteer-tag">PUBLIC SPEAKING</span>
         </div>
+        <div className="volunteer-note">
+          <span className="volunteer-icon" aria-hidden="true">
+            ◇
+          </span>
+
+          <div>
+            <span className="eyebrow">REGIONAL YOUTH TEAM · September 2016 - December 2020</span>
+
+            <h3>Football (Soccer)</h3>
+
+            <p>Kazakhstan</p>
+
+            <ul className="activity-bullets">
+              <li>
+                Central Asian Championship Winner with the Kazakhstan U-15 National Team in 2019.
+              </li>
+              <li>
+                Played for a regional youth football team in Kazakhstan
+                from ages ten to fourteen.
+              </li>
+              <li>
+                Traveled with my teammates and coach to compete in
+                tournaments in neighboring countries.
+              </li>
+            </ul>
+          </div>
+
+          <span className="volunteer-tag">SPORTS</span>
+        </div>
+        <div className="volunteer-note">
+          <span className="volunteer-icon" aria-hidden="true">
+            ◉
+          </span>
+
+          <div>
+            <span className="eyebrow">COMPETITIVE TRAINING · MAY 2011 - October 2016</span>
+
+            <h3>Tennis</h3>
+
+            <p>Kazakhstan</p>
+
+            <ul className="activity-bullets">
+              <li>
+                Shymkent City Tennis Champion in 2014 and 2015, winning the city-level tournament for two consecutive years.
+              </li>
+              <li>
+                Trained competitively in tennis from ages five to ten,
+                developing my technique, footwork and coordination through
+                everyday practice.
+              </li>
+              <li>
+                Built concentration and persistence through individual training,
+                learning to respond to mistakes and improve over time.
+              </li>
+            </ul>
+          </div>
+
+          <span className="volunteer-tag">SPORTS</span>
+        </div>
+        <p className="sports-note">
+          I stepped away from competitive sports for health reasons.
+        </p>
         </section>
         <section
           className="skills-section section-shell section-space"
           id="skills"
         >
           <div className="section-label">
-            <span>04 / SKILLS</span>
+            <span> 04 / SKILLS</span>
             <span className="label-line" />
           </div>
           <div className="section-heading">
@@ -709,10 +729,71 @@ export default function Portfolio() {
             ))}
           </div>
         </section>
+        <section className="projects-section section-space" id="projects">
+          <div className="section-shell">
+            <div className="section-label">
+              <span>05 / PROJECTS</span>
+              <span className="label-line" />
+            </div>
+            <div className="section-heading">
+              <h2>
+                Learning by building
+              </h2>
+              <p>
+                Coursework and practical projects.
+                <br />A growing collection of my work.
+              </p>
+            </div>
+            <div className="project-filters" aria-label="Filter projects">
+              {["All work", "Planning"].map((f) => (
+                <button
+                  key={f}
+                  className={filter === f ? "active" : ""}
+                  aria-pressed={filter === f}
+                  onClick={() => setFilter(f)}
+                >
+                  {f}
+                  {f === "All work" && (
+                    <span>{String(projects.length).padStart(2, "0")}</span>
+                  )}
+                </button>
+              ))}
+            </div>
+            <div className="project-grid" aria-live="polite">
+              {projects
+                .filter((p) => filter === "All work" || p.category === filter)
+                .map((p) => (
+                  <article className="project-card" key={p.id}>
+                    <ProjectArt kind={p.illustration} />
+                    <div className="project-content">
+                      <div className="project-meta">
+                        <span>{p.context}</span>
+                        <span>{p.id}</span>
+                      </div>
+                      <h3>{p.title}</h3>
+                      <p>{p.description}</p>
+                      <div className="tags">
+                        {p.tools.map((t) => (
+                          <span key={t}>{t}</span>
+                        ))}
+                      </div>
+                      <button
+                        className="project-open"
+                        onClick={() => setProject(p)}
+                        aria-label={`Read project notes: ${p.title}`}
+                      >
+                        Project notes <Arrow diagonal />
+                      </button>
+                    </div>
+                  </article>
+                ))}
+            </div>
+          </div>
+        </section>
         <section className="contact-section section-space" id="contact">
           <div className="section-shell">
             <div className="section-label">
-              <span>05 / CONTACT</span>
+              <span>06 / CONTACT</span>
               <span className="label-line" />
             </div>
             <div className="contact-grid">
