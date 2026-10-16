@@ -830,7 +830,7 @@ export default function Portfolio() {
                 </a>
                 <div className="contact-location">
                   <span className="tiny-dot" />
-                  New York
+                  New York City, NY · United States
                 </div>
               </div>
             </div>
