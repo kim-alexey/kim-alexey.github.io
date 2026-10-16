@@ -6,7 +6,7 @@ A first draft of Alexey’s internship portfolio, built with Next.js, TypeScript
 
 Use Node.js 24 and npm 11 (the validated cloud versions). No credentials or external services are required.
 
-```sh
+```
 npm ci
 npm run dev
 ```
