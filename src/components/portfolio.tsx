@@ -384,9 +384,6 @@ export default function Portfolio() {
               <span />
               SEEKING SUMMER 2027 INTERNSHIPS
             </div>
-            <p className="hero-kicker">
-              INFORMATION SYSTEMS STUDENT / STONY BROOK
-            </p>
             <h1>
               Technology.
               <br />
@@ -445,7 +442,7 @@ export default function Portfolio() {
                 <div className="education-bottom">
                   <span>Expected graduation</span>
                   <b>
-                    Spring 2028 <Arrow diagonal />
+                    Spring 2028
                   </b>
                 </div>
               </div>
@@ -477,7 +474,7 @@ export default function Portfolio() {
               Technology meets real people.
             </h2>
             <p>
-              Campus work, teaching, and support.
+              Campus work, teaching and support.
               <br />
               Different settings. A shared human focus.
             </p>
@@ -833,7 +830,7 @@ export default function Portfolio() {
                 </a>
                 <div className="contact-location">
                   <span className="tiny-dot" />
-                  New York · Open to Summer 2027 opportunities
+                  New York
                 </div>
               </div>
             </div>

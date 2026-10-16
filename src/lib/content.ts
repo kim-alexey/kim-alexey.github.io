@@ -7,7 +7,7 @@ export const profile = {
   about: [
     "I chose Information Systems because I’m interested in both how technology works and how people use it. I enjoy breaking down problems, organizing information, and finding ways to make everyday tasks easier. I'm especially interested in how data and technology can support better business decisions.",
     "My experience includes university websites, student and customer support, and programming instruction. I enjoy work that combines technical understanding with clear communication.",
-    "Originally from Kazakhstan and now studying in New York, I bring an international perspective and communicate in English and Russian.",
+    "A Korean originally from Kazakhstan and now studying in New York, I bring an international perspective and communicate in English and Russian.",
   ],
 };
 
@@ -89,13 +89,13 @@ export const projects: Project[] = [
       "A Jira and Confluence workspace for planning a fitness app. As the team's Scrum Master, I worked on a project covering user stories, sprint planning, progress tracking, and team reflection.",
   tools: ["Jira", "Confluence", "Scrum", "Sprint planning"],
   confirmed:
-    "FitMe was an ISE 393 team project centered on planning a mobile fitness application. The proposed features included user registration, profile setup, workout logging, step tracking, calorie tracking, and a progress dashboard. Our workspace connected Jira tasks with supporting documentation in Confluence.",
+    "FitMe was an ISE 393 team project centered on planning a mobile fitness application. The proposed features included user registration, profile setup, workout logging, step tracking, calorie tracking and a progress dashboard. Our workspace connected Jira tasks with supporting documentation in Confluence.",
   illustration: "board",
   sections: [
     {
       heading: "My role",
       text:
-        "I served as Scrum Master in a four-person team, alongside a Product Owner, Developer, and QA Engineer. The project gave me practice working within a Scrum team and connecting project plans, task tracking, and team communication.",
+        "I took a role of a Scrum Master in a four-person team, alongside a Product Owner, Developer and QA Engineer. The project gave me practice working within a Scrum team and connecting project plans, task tracking, and team communication.",
     },
     {
       heading: "Jira: user stories and sprint tracking",
@@ -174,6 +174,7 @@ export const skillGroups = [
       "React",
       "Next.js",
       "TypeScript",
+      "Systems troubleshooting",
     ],
   },
   {
@@ -182,13 +183,16 @@ export const skillGroups = [
     description: "Connecting technical work to how organizations operate.",
     skills: [
       "Jira & Confluence",
+      "Agile & Scrum",
+      "Sprint planning",
+      "User stories",
       "Work breakdown structure (WBS)",
-      "IT project management",
       "Scope & scheduling",
       "Stakeholder coordination",
       "Business finance",
       "Engineering economics",
-      "Systems troubleshooting",
+      "Personal finance",
+      "Investment fundamentals",
     ],
   },
   {
@@ -199,6 +203,9 @@ export const skillGroups = [
       "Technical support",
       "Teaching & mentoring",
       "Team collaboration",
+      "Team leadership",
+      "Public speaking",
+      "Event coordination",
       "Client communication",
       "English",
       "Russian",
