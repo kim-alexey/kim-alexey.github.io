@@ -1915,3 +1915,28 @@ h2 em {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+
+.education-honors {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(169, 199, 255, 0.18);
+}
+
+.education-honors ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.education-honors li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.education-honors li + li {
+  margin-top: 6px;
+}
+
+.education-honors li::marker {
+  color: var(--blue);
+}

@@ -439,11 +439,18 @@ export default function Portfolio() {
                   <br />
                   Finance and Industrial Engineering minors
                 </p>
+
                 <div className="education-bottom">
                   <span>Expected graduation</span>
-                  <b>
-                    Spring 2028
-                  </b>
+                  <b>Spring 2028</b>
+                </div>
+
+                <div className="education-honors">
+                  <span className="eyebrow">HONORS & AWARDS</span>
+                  <ul>
+                    <li>Dean's List Honoree</li>
+                    <li>Global Excellence Scholarship Recipient</li>
+                  </ul>
                 </div>
               </div>
               {profile.about.map((p) => (
